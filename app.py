@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/fizzbuzz')
 def fizzbuzz():
     numbers = range(1, 101)
-    return render_template('fizzbuzz_template.html', numbers=numbers)
+    return render_template('templates/fizzbuzz_template.html', numbers=numbers)
 
 if __name__ == '__main__':
     app.run(debug=True)
